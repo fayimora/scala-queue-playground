@@ -1,13 +1,12 @@
 package com.fayimora.queueplay
-import com.typesafe.scalalogging.StrictLogging
+import grizzled.slf4j.Logging
 
-object Runner extends StrictLogging {
+object Runner extends Logging {
     def main(args: Array[String]) = {
-        // logger.debug("We are a go!")
-        logger.trace("Trace log message")
-        logger.debug("Debug log message")
-        logger.info("Info log message")
-        logger.warn("Warning log message")
-        logger.error("Error log message")
+        trace("Trace log message")
+        debug("Debug log message")
+        info("Info log message")
+        warn("Warning log message")
+        error("Error log message")
     }
 }
