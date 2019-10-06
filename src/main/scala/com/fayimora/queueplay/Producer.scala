@@ -6,11 +6,6 @@ import awscala.sqs.MessageBatchEntry
 import java.{util => ju}
 import play.api.libs.json.Json
 
-case class Vars(a: String, b: String)
-object Vars {
-    implicit val format = Json.format[Vars]
-}
-
 class Producer extends QueueHelper with Logging {
     
     def run() = {
